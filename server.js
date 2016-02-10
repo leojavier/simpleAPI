@@ -55,7 +55,10 @@ app.get('/as_save_fb_event', function(req, res){
 
 app.get('/events', function(req, res){
     
-    res.json({message:'You must pass a category to this endpoint. Ex: /events/kids'}); 
+    res.contentType('application/json');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.json(thumbs); 
 
 });
 
