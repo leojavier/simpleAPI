@@ -2,6 +2,7 @@ module.exports = function(){
     return [
         {
             id:01,
+            modalId:02,
             category: 'shopping',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -16,6 +17,7 @@ module.exports = function(){
         },
         {
             id:02,
+            modalId:04,
             category: 'kids',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -30,6 +32,7 @@ module.exports = function(){
         },
         {
             id:03,
+            modalId:06,
             category: 'kids',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -44,6 +47,7 @@ module.exports = function(){
         },
         {
             id:04,
+            modalId:22,
             category: 'family',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -58,6 +62,7 @@ module.exports = function(){
         },
         {
             id:05,
+            modalId:02,
             category: 'family',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -72,6 +77,7 @@ module.exports = function(){
         },
         {
             id:06,
+            modalId:04,
             category: 'family',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
@@ -86,6 +92,7 @@ module.exports = function(){
         },
         {
             id:07,
+            modalId:06,
             category: 'family',
             url:'http://placecorgi.com/400/200',
             title:'68 JAY STREET BAR',
