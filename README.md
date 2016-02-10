@@ -87,7 +87,7 @@ In case of errors it will return an object with a `message` property to report t
 To return all items:
 ```sh
 http://localhost:9001/events
-
+```
 
 To return an specific item:
 ```sh
