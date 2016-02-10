@@ -59,7 +59,7 @@ Please see the `models` bellow.
 }]
 ```
 
-To return an specific item:
+To return a specific item:
 ```sh
 http://localhost:9001/as_save_fb_event/id
 ```
@@ -89,7 +89,7 @@ To return all items:
 http://localhost:9001/events
 ```
 
-To return an specific item:
+To return a specific item:
 ```sh
 http://localhost:9001/events/category
 ```
