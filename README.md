@@ -63,7 +63,7 @@ To return an specific item:
 ```sh
 http://localhost:9001/as_save_fb_event/id
 ```
-- **IDs availableto pass:** *02, 04, 06, 22*
+- **IDs available to pass:** *02, 04, 06, 22*
 
 ### Errors
 In case of errors it will return an object with a `message` property to report the error.
@@ -89,7 +89,7 @@ To return an specific item:
 ```sh
 http://localhost:9001/events/category
 ```
-- **IDs availableto pass:** *02, 04, 06, 22*
+- **categories available to pass:** *kids, family, shopping*
 
 ### Errors
 In case of errors it will return an object with a `message` property to report the error.
