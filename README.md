@@ -19,8 +19,10 @@ $ node server
 ```
 ### To Execute calls
 The server will run on localhost, port 9001 and it will allow any domain.
+
 **There are two objects available to serve:** 
 Please see the `models` bellow.
+
 
 #### Model for Modal
 ```
@@ -80,7 +82,6 @@ In case of errors it will return an object with a `message` property to report t
         day:30
     },
     today:false 
-
 }]
 ```
 
@@ -88,6 +89,8 @@ To return an specific item:
 ```sh
 http://localhost:9001/events/category
 ```
+- **IDs availableto pass:** *02, 04, 06, 22*
 
 ### Errors
 In case of errors it will return an object with a `message` property to report the error.
+
