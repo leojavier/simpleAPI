@@ -60,10 +60,10 @@ To return all the items go to:
 http://localhost:9001
 ```
 
-To an specific item:
+To return an specific item:
 ```sh
 http://localhost:9001/as_save_fb_event/id
 ```
 
-### To Execute calls
+### Errors
 In case of errors it will return an object with a `message` property to report the error.
