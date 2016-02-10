@@ -19,8 +19,10 @@ $ node server
 ```
 ### To Execute calls
 The server will run on localhost, port 9001 and it will allow any domain.
-Every object served contains an ID. Please see bellow the `model`.
+**There are two objects available to serve:** 
+Please see the `models` bellow.
 
+#### Model for Modal
 ```
 [{
     id:02,
@@ -55,15 +57,37 @@ Every object served contains an ID. Please see bellow the `model`.
 }]
 ```
 
-To return all the items go to:
-```sh
-http://localhost:9001
-```
-
-To an specific item:
+To return an specific item:
 ```sh
 http://localhost:9001/as_save_fb_event/id
 ```
+- **IDs availableto pass:** *02, 04, 06, 22*
 
-### To Execute calls
+### Errors
+In case of errors it will return an object with a `message` property to report the error.
+
+#### Model for Filters
+```
+[{{
+    id:02,
+    category: 'kids',
+    url:'http://placecorgi.com/400/200',
+    title:'68 JAY STREET BAR',
+    overview:'68 Jay Street at Water Street',
+    content:'content',
+    date: {
+        dayName:'Fri',
+        day:30
+    },
+    today:false 
+
+}]
+```
+
+To return an specific item:
+```sh
+http://localhost:9001/events/category
+```
+
+### Errors
 In case of errors it will return an object with a `message` property to report the error.
