@@ -70,9 +70,10 @@ In case of errors it will return an object with a `message` property to report t
 
 #### Model for Filters
 ```
-[{{
-    id:02,
-    category: 'kids',
+[{
+    id:01,
+    modalId:02,
+    category: 'shopping',
     url:'http://placecorgi.com/400/200',
     title:'68 JAY STREET BAR',
     overview:'68 Jay Street at Water Street',
@@ -82,6 +83,7 @@ In case of errors it will return an object with a `message` property to report t
         day:30
     },
     today:false 
+
 }]
 ```
 To return all items:
