@@ -19,7 +19,7 @@ $ node server
 ```
 ### To Execute calls
 The server will run on localhost, port 9001 and it will allow any domain.
-Every object served contains an ID. Please see bellow the `model`.
+Every object served contains an ID. Please see the  `model` bellow.
 
 ```
 [{
