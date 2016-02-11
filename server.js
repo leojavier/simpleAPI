@@ -1,9 +1,18 @@
+var cors = require('cors')
 var app = require('express')();
 var _ = require('lodash');
+var bodyParser = require('body-parser');
+
+var jsonParser = bodyParser.json()
 var port = 9001;
 
 var modal = require('./js/modal')();
 var thumbs = require('./js/thumbs')();
+
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/', function(req, res){
 
@@ -31,19 +40,22 @@ app.get('/as_save_fb_event/:id', function(req, res){
 });
 
 //Gets data to filter the events
-app.get('/events/:category', function(req, res){
-    
-    var param = req.params.category;
-    var result = _.find(thumbs,['category',param]);
-    
-    res.contentType('application/json');
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    if (result) {
-        res.json(result); 
-    }else{
-        res.json({message:'there is not item in the category: ' + param}); 
+app.post('/filter', function(req, res){
+
+    var result =[];
+    for(var i =0; i < req.body.filters.length; i++) {
+        
+        var param = req.body.filters[i].name;
+        
+        //log filters coming from post
+        for(var n =0; n < thumbs.length; n++) {
+            if(thumbs[n].category == param) {
+                result.push(thumbs[n]);
+            }
+        }
     }
+    
+    res.jsonp(result); 
     
 });
 
